@@ -38,6 +38,16 @@ section {
     margin-left: -100%;
 }
 
+
+#section-1 {
+    background-color: #F8F8F8;
+}
+
+#section-1 h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
 #section-2 h1 {
     display: flex;
     justify-content: center;
