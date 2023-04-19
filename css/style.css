@@ -1,18 +1,20 @@
 @import url(font.css);
 
-body {
+/*-------------------------- GENERAL  --------------------------*/
+* {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid red;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 0 2vh 0 2vh;
-    gap: 28vh;
+section {
+    padding: 2vh;
 }
 
-header h1 {
-    font-size: 15px;
+.blue {
+    color: #5C98F2;
 }
 
 h1 {
@@ -20,15 +22,26 @@ h1 {
     font-weight: 400;
 }
 
-section {
-    padding: 2vh;
+p,
+form {
+    font-family: "DM Sans", sans-serif;
 }
 
-.bleu {
-    color: #5C98F2;
+/*-------------------------- Header --------------------------*/
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 2vh 0 2vh;
+    gap: 25vh;
 }
 
-.nav {
+header h1 {
+    font-size: 1.1rem;
+}
+
+header .nav {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 12px;
@@ -38,9 +51,11 @@ section {
     margin-left: -100%;
 }
 
+/*-------------------------- Section-1 --------------------------*/
+
 
 #section-1 {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
 }
 
 #section-1 h1 {
@@ -48,7 +63,55 @@ section {
     line-height: 48px;
 }
 
-#section-2 h1 {
-    display: flex;
-    justify-content: center;
+#section-1 article {
+    padding-top: 10%;
+    margin: 5%;
 }
+
+#section-1 article p {
+    font-size: 1.25rem;
+    line-height: 34px;
+    color: #8c8c8c;
+}
+
+#section-1 form {
+    border-radius: 2rem;
+    background-color: white;
+    margin: 5%;
+    margin-top: 15%;
+    padding: 5%;
+    padding-top: 15%;
+    padding-bottom: 0;
+}
+
+.Section-1-form-title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #383838;
+    padding: 10%;
+}
+
+#section-1 input {
+    padding-left: 10%;
+    border: none;
+}
+
+#section-1 select {
+    border: none;
+}
+
+#section-1-btn {
+    background-color: #5C98F2;
+    height: 55px;
+    width: 110%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 30%;
+    margin-left: 0;
+    margin-right: 0;
+    top: 65%;
+}
+
+
+/*-------------------------- Section-2 --------------------------*/
