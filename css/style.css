@@ -6,7 +6,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    border: 1px solid red;
+    box-sizing: border-box;
 }
 
 section {
@@ -33,12 +33,18 @@ form {
 header {
     display: flex;
     align-items: center;
-    padding: 0 2vh 0 2vh;
+    padding: 0  0 0 5vh;
     gap: 25vh;
 }
 
 header h1 {
-    font-size: 1.1rem;
+    font-size: 1.563rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15vh;
 }
 
 header .nav {
@@ -55,7 +61,8 @@ header .nav {
 
 
 #section-1 {
-    background-color: #f8f8f8;
+    background-color: #60c0dd;
+    /*background-color: #f8f8f8;*/
 }
 
 #section-1 h1 {
@@ -78,8 +85,7 @@ header .nav {
     border-radius: 2rem;
     background-color: white;
     margin: 5%;
-    margin-top: 15%;
-    padding: 5%;
+    margin-top: 15%;    
     padding-top: 15%;
     padding-bottom: 0;
 }
@@ -103,15 +109,84 @@ header .nav {
 
 #section-1-btn {
     background-color: #5C98F2;
-    height: 55px;
-    width: 110%;
+    height: 55px;    
     border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    margin-top: 30%;
+    border-bottom-right-radius: 2rem;    
     margin-left: 0;
-    margin-right: 0;
-    top: 65%;
+    margin-right: 0;    
 }
 
-/*TEST ESPECE TEST*/
+form #section-1-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    font-size: 1rem; 
+}
+form #section-1-btn-search {
+    padding: 10px;
+    background:none;
+     color: #f8f8f8;
+    font-size: 1rem;    
+}
 /*-------------------------- Section-2 --------------------------*/
+
+
+#section-2 h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#section-2 article {
+    padding-top: 10%;
+    margin: 5%;
+}
+
+#section-2 article p {
+    font-size: 1.25rem;
+    line-height: 34px;
+    color: #8c8c8c;
+}
+
+#section-2-btn-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-2-btn-all button {
+    border: none;
+    background: none;
+    padding: 15%;  
+}
+
+/*-------------------------- Section-3 --------------------------*/
+#section-3 {
+    background-color: #60c0dd;
+}
+
+#section-3 h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#section-3 article {
+    padding-top: 10%;
+    margin: 5%;
+}
+
+#section-3 article p {
+    font-size: 1.25rem;
+    line-height: 34px;
+    color: #8c8c8c;
+}
+
+#section-3-btn-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-3-btn-all button {
+    border: none;
+    background: none;
+    padding: 15%;  
+}
