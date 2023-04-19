@@ -1,57 +1,35 @@
+@import url(font.css);
+
 body {
-    background: no-repeat url(/img/bg2.png);
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 header {
+    font-family: "DM Sans";
     display: flex;
-    justify-content: center;
-    height: 160px;
-    padding-top: 1%;
+    gap: 18vh;
 }
 
 h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-h2 {
-    margin: 0;
+    font-family: "DM Serif Display", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.titre {
-    display: inline-flex;
-    gap: 155%;
-    align-items: baseline;
+section {
+    padding: 2vh;
 }
 
-.card {
-    display: flex;
-    margin-left: 33%;
-    margin-top: 3%;
+.nav {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    list-style: none;
+    margin-left: -100%;
 }
 
-.topcard {
-    border-top-left-radius: 10px;
-    background-color: #FCC719;
-    color: white;
-    padding-left: 40px;
-    padding-top: 35px;
-    height: 35vh;
-    width: 40vh;
-}
-
-.type {
-    display: flex;
-    margin: 3% 0 0 0;
-    color: black;
-    background-color: #FEEEBA;
-    border: none;
-    padding: 5px 5px;
-    border-radius: 10px;
+#section-1 {
+    background-color: black;
 }
