@@ -5,19 +5,27 @@ body {
 }
 
 header {
-    font-family: "DM Sans";
     display: flex;
-    gap: 18vh;
+    align-items: center;
+    padding: 0 2vh 0 2vh;
+    gap: 28vh;
+}
+
+header h1 {
+    font-size: 15px;
 }
 
 h1 {
     font-family: "DM Serif Display", sans-serif;
     font-weight: 400;
-    font-size: 15px;
 }
 
 section {
     padding: 2vh;
+}
+
+.bleu {
+    color: #5C98F2;
 }
 
 .nav {
@@ -30,6 +38,7 @@ section {
     margin-left: -100%;
 }
 
-#section-1 {
-    background-color: black;
+#section-2 h1 {
+    display: flex;
+    justify-content: center;
 }
