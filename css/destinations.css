@@ -27,7 +27,7 @@ header h1 {
     font-size: 25px;
 }
 
-section{
+section {
     padding: 2vh;
 }
 
@@ -209,7 +209,7 @@ h1 {
 
 /* Menu hamburger */
 
-.header{
+.header {
     border-bottom: 1px solid #E2E8F0;
     position: sticky;
     top: 0;
@@ -249,12 +249,12 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 400;
     color: #000000;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #5C98F2
 }
 
@@ -316,34 +316,33 @@ footer {
     padding: 4vh 0 0 3vh;
 }
 
-footer h1{
+footer h1 {
     font-size: 1rem;
     color: #ffff;
     letter-spacing: 0.1vh;
 }
 
-footer .nav-logo{
+footer .nav-logo {
     color: #fff;
     font-size: 4vh;
 }
 
-.contactf{
-    display: inline-block;
+.contactf {
     line-height: 3rem;
     padding-top: 6vh;
 }
 
-.contact{
+.contact {
     font-family: "Arial", sans-serif;
     font-weight: 100;
     color: #8C8C8C
 }
 
-.payment h1{
+.payment h1 {
     line-height: 5vh;
 }
 
-.payment{  
+.payment {
     padding-top: 2vh;
     gap: 1vh;
 }
@@ -355,41 +354,39 @@ footer .nav-logo{
     line-height: 2.5vh;
 }
 
-.icone{
-    display: inline-block;
+.icone {
     padding-top: 2vh;
 }
 
 .fa-cc-amex:before {
     content: "\f1f3";
-    font-size: 1.7rem ;
+    font-size: 1.7rem;
     color: #ffffff;
     margin-right: 15px;
 }
 
 .fa-cc-mastercard:before {
     content: "\f1f1";
-    font-size: 1.7rem ;
+    font-size: 1.7rem;
     color: #ffffff;
     margin-right: 15px;
 }
 
 .fa-cc-visa:before {
     content: "\f1f0";
-    font-size: 1.7rem ;
+    font-size: 1.7rem;
     color: #ffffff;
     margin-right: 15px;
 }
 
 .fa-cc-paypal:before {
     content: "\f1f4";
-    font-size: 1.7rem ;
+    font-size: 1.7rem;
     color: #ffffff;
     margin-right: 15px;
 }
 
-.copyright{
-    display: flex;
+.copyright {
     padding-top: 2vh;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
