@@ -1,4 +1,6 @@
 @import url(font.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap%27');
+
 
 /*-------------------------- GENERAL  --------------------------*/
 * {
@@ -18,8 +20,10 @@ section {
 }
 
 h1 {
-    font-family: "DM Serif Display", sans-serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 
 p,
@@ -35,10 +39,11 @@ header {
     align-items: center;
     padding: 0  0 0 5vh;
     gap: 25vh;
+    
 }
 
-header h1 {
-    font-size: 1.563rem;
+header h2 {
+    font-size: 2rem;
 }
 
 .logo {
@@ -61,14 +66,10 @@ header .nav {
 
 
 #section-1 {
-    background-color: #60c0dd;
-    /*background-color: #f8f8f8;*/
+    background-color: #f8f8f8;
 }
 
-#section-1 h1 {
-    font-size: 40px;
-    line-height: 48px;
-}
+
 
 #section-1 article {
     padding-top: 10%;
@@ -76,30 +77,42 @@ header .nav {
 }
 
 #section-1 article p {
-    font-size: 1.25rem;
-    line-height: 34px;
+    padding-top: 5vh;
+    font-size: 1rem;    
     color: #8c8c8c;
 }
 
-#section-1 form {
+.section-1-form {
     border-radius: 2rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
     margin: 5%;
-    margin-top: 15%;    
-    padding-top: 15%;
-    padding-bottom: 0;
+    margin-top: 15%;  
+    margin-bottom: 15%;   
+    justify-content: center;
+    height: 50vh;
 }
 
-.Section-1-form-title {
+.section-1-form-container {
+    margin: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#section-1 > form > div.section-1-form-container > div.keywords > div > input[type=text] {
+    height: 3vh;
+}
+.section-1-form-title {
     font-weight: 500;
     font-size: 1rem;
     line-height: 22px;
-    color: #383838;
-    padding: 10%;
+    color: #383838;      
 }
 
-#section-1 input {
-    padding-left: 10%;
+#section-1 input {  
     border: none;
 }
 
@@ -109,7 +122,7 @@ header .nav {
 
 #section-1-btn {
     background-color: #5C98F2;
-    height: 55px;    
+    height: 15vh;    
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;    
     margin-left: 0;
@@ -129,13 +142,23 @@ form #section-1-btn-search {
      color: #f8f8f8;
     font-size: 1rem;    
 }
+
+
+.underline {
+    border-bottom: 1px solid grey;
+    padding-bottom: 2vh;
+}
+
+#section-1 input:first-child{
+    width: 100%;
+}
 /*-------------------------- Section-2 --------------------------*/
 
-
-#section-2 h1 {
-    font-size: 40px;
-    line-height: 48px;
+#section-2 {
+ 
 }
+
+
 
 #section-2 article {
     padding-top: 10%;
@@ -160,13 +183,11 @@ form #section-1-btn-search {
 }
 
 /*-------------------------- Section-3 --------------------------*/
-#section-3 {
-    background-color: #60c0dd;
-}
 
-#section-3 h1 {
-    font-size: 40px;
-    line-height: 48px;
+
+
+#section-3 {
+    background-color: #f8f8f8;
 }
 
 #section-3 article {
@@ -190,3 +211,162 @@ form #section-1-btn-search {
     background: none;
     padding: 15%;  
 }
+
+
+/*-------------------------- Section-4 --------------------------*/
+
+#section-4 article {
+    padding-top: 10%;
+    margin: 5%;
+}
+
+#section-4 article p {
+    font-size: 1.25rem;
+    line-height: 34px;
+    color: #8c8c8c;
+}
+
+#section-4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section-4 form input {
+    border: 15px solid #D9D9D9;
+    border-radius: 30px;
+    height: 8vh;   
+    width: 80%;
+}
+#section-4 input {    
+    color: #8c8c8c;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#section-4 button{
+    margin-top: 3vh;
+    height: 8vh;   
+    width: 80%;
+    font-family: "DM Sans", sans-serif;
+    background-color: #5C98F2;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;  
+    cursor: pointer;   
+}
+
+.section-4-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-------------------------- Section-5 --------------------------*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    border-radius: 30px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 8px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+
+  /*-------------------------- Section-6 --------------------------*/
+
+
+  #section-6 h1 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #section-6 img{
+    width: 10vh;
+    margin-right: 5vw;
+  }
+
+  #section-6 figure {
+    display: flex;
+    flex-direction: row;    
+    text-align: left;
+    margin-bottom: 5vh;
+}
+#section-6 p {
+    color: #717171;
+   
+}
+
+  

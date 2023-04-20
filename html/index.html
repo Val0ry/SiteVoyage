@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>DestiNations</title>
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <h1>Desti<span class="blue">Nations</span></h1>
+      <h2>Desti<span class="blue">Nations</span></h2>
       <img src="../img/barre-de-menu.png" height="25px">
     </div>
     <!--<nav>
@@ -33,37 +34,39 @@
   <section id="section-1">
     <article>
       <h1>Find Next Place To <span class="blue">Visit</span></h1>
-      <p>Discover amazing places at exclusive deals.<br>
-        Eat, Shop, Visit interesting places around the world.</p>
+      <p>Discover amazing places with exclusive offers. <br>Eat, shop, and visit exceptional locations departing from
+        the world's largest cities.</p>
     </article>
-    <form class="" action="" method="GET">
-      <div class=""><label class="Section-1-form-title">Keywords</label>
-        <div class="">
-          <input name="tour-search" type="text" placeholder="Enter your keywords" value="">
+    <form class="section-1-form" action="" method="GET">
+      <div class="section-1-form-container">
+        <div class="keywords"><label class="Section-1-form-title">Keywords</label>
+          <div class="underline">
+            <input name="tour-search" type="text" placeholder="Enter your keywords" value="">
+          </div>
         </div>
-      </div>
-      <div class="Section-1-form-title"><label class="">Destination</label>
-        <div class="">
-          <select name="">
-            <option value="">Any</option>
-            <option value="america">America</option>
-            <option value="asia">Asia</option>
-            <option value="egypt">Egypt</option>
-            <option value="scandinavia">Scandinavia</option>
-            <option value="south-africa">South-Africa</option>
-            <option value="western-europe">Western-Europe</option>
-          </select>
+        <div class="section-1-form-title"><label class="">Destination</label>
+          <div class="underline">
+            <select name="">
+              <option value="">Any</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="egypt">Egypt</option>
+              <option value="scandinavia">Scandinavia</option>
+              <option value="south-africa">South-Africa</option>
+              <option value="western-europe">Western-Europe</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="Section-1-form-title"><label class="">Duration</label>
-        <div class="">
-          <select name="duration">
-            <option value="">Any</option>
-            <option value="1">1 Day</option>
-            <option value="2">2-4 Days</option>
-            <option value="5">5-7 Days</option>
-            <option value="7">7+ Days</option>
-          </select>
+        <div class="Section-1-form-title"><label class="">Duration</label>
+          <div class="underline">
+            <select name="duration">
+              <option value="">Any</option>
+              <option value="1">1 Day</option>
+              <option value="2">2-4 Days</option>
+              <option value="5">5-7 Days</option>
+              <option value="7">7+ Days</option>
+            </select>
+          </div>
         </div>
       </div>
       <div id="section-1-btn">
@@ -91,13 +94,20 @@
         </button>
       </div>
     </a>
+
+
+
+
+
   </section>
 
   <section id="section-3">
     <article>
-      <h1><span class="blue">sdfg<br></span>dsfgsdfg</h1>
+      <h1>Popular <span class="blue">Tours<br></span></h1>
     </article>
-    <a href="../html/destinations.html">
+
+
+    <a href="#">
       <div id="section-3-btn-all">
         <button>See more
           <span>
@@ -106,6 +116,7 @@
         </button>
       </div>
     </a>
+
   </section>
 
 
@@ -113,24 +124,96 @@
 
 
   <section id="section-4">
-    <p>Hotels</p>
+    <article>
+      <h1>Don't miss a thing</h1>
+      <p>Get update to special deals and exclusive offers.
+        Sign up to our newsletter!</p>
+    </article>
+    <form action="">
+      <input type="text" placeholder="Enter you mail">
+    </form>
+    <div class="section-4-btn">
+      <button>SUSCRIBE</button>
+    </div>
   </section>
 
   <section id="section-5">
-    <p>Offres spéciales</p>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width slides/quotes -->
+      <div class="mySlides">
+        <q>Incredible trip! The best vacation I've ever had. Thank you to this travel company</q>
+        <p class="author">- Brittany Clark</p>
+      </div>
+
+      <div class="mySlides">
+        <q>Easy booking process and exceptional service. Highly recommend!</q>
+        <p class="author">- Frances Hill</p>
+      </div>
+
+      <div class="mySlides">
+        <q>Unforgettable experience. Will definitely book with this company again.</q>
+        <p class="author">- Jennth Norz</p>
+      </div>
+
+      <!-- Next/prev buttons -->
+      
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </section>
 
   <section id="section-6">
-    <p>Newsletter</p>
+    <ul>
+      <li>
+        <article>
+          <figure><img src="../img/earth.png" alt="">
+            <figcaption>
+              <h1>700 Destinations</h4>
+              <p>Our expert team handpicked all destinations in this site</p>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li>
+        <article>
+          <figure><img src="../img/price.png" alt="">
+            <figcaption>
+              <h1>Best Price Guarantee</h4>
+              <p>Price match within 48 hours of order confirmation</p>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li>
+        <article>
+          <figure><img src="../img/tchat.png" alt="">
+            <figcaption>
+              <h1>Top notch support</h4>
+              <p>We are here to help, before during, and even after your trip</p>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+    </ul>
   </section>
 
   <section id="section-7">
-    <p>What our customers are saying about us</p>
+    contact
   </section>
 
   <footer>
 
   </footer>
+
+
 </body>
+<script src="../js/script.js"></script>
 
 </html>
