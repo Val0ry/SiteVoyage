@@ -1,56 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url(../css/font.css);
 
-body {
+/* General */
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     padding: 0 0 0 5vh;
+
 }
 
 header h1 {
     font-size: 25px;
 }
 
-h1 {
-    font-family: "DM Serif Display", sans-serif;
-    font-weight: 400;
-}
-
-section {
+section{
     padding: 2vh;
 }
 
-.bleu {
+.blue {
     color: #5C98F2;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15vh;
+.white {
+    color: #fff;
 }
 
-.destinations {}
-
-.nav {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    list-style: none;
-    margin-left: -100%;
+.grey {
+    color: #8C8C8C;
 }
+
+/* Section 1 */
 
 #section-1 {
     background-color: #F4F4F6
 }
 
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
 #section-1 h1 {
     font-size: 40px;
     line-height: 48px;
 }
+
+/* Section 2 */
 
 #section-2 {
     padding: 5vh 0 0 5vh;
@@ -63,14 +73,14 @@ section {
     position: relative;
     align-items: center;
     display: inline-block;
-    margin: 0;
+    margin: 0 0 35px 0;
     min-width: 230px;
     max-width: 290px;
     width: 100%;
     height: 100%;
     text-align: left;
     font-size: 16px;
-    background: #000;
+    z-index: 1;
 }
 
 .card *,
@@ -86,6 +96,7 @@ section {
     max-width: 100%;
     backface-visibility: hidden;
     vertical-align: top;
+    border-radius: 10px;
 }
 
 .card:before,
@@ -143,9 +154,7 @@ section {
 .card:hover img,
 .card.hover img {
     zoom: 1;
-    filter: alpha(opacity=20);
-    -webkit-opacity: 0.2;
-    opacity: 0.2;
+    filter: blur(1.5px);
 }
 
 .card:hover:before,
@@ -190,11 +199,200 @@ section {
     transition-delay: 0.35s;
 }
 
-
-.europe {
-    display: inline-flex;
-    position: relative;
+.continent {
+    display: block;
+    margin: 1.5vh;
     text-align: center;
     color: #ffff;
+    font-size: 1.4rem;
+}
 
+/* Menu hamburger */
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link{
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #5C98F2
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 2;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #272626;
+    padding: 4vh 0 0 3vh;
+}
+
+footer h1{
+    font-size: 1rem;
+    color: #ffff;
+    letter-spacing: 0.1vh;
+}
+
+footer .nav-logo{
+    color: #fff;
+    font-size: 4vh;
+}
+
+.contactf{
+    display: inline-block;
+    line-height: 3rem;
+    padding-top: 6vh;
+}
+
+.contact{
+    font-family: "Arial", sans-serif;
+    font-weight: 100;
+    color: #8C8C8C
+}
+
+.payment h1{
+    line-height: 5vh;
+}
+
+.payment{  
+    padding-top: 2vh;
+    gap: 1vh;
+}
+
+.pay {
+    font-family: "Arial";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2.5vh;
+}
+
+.icone{
+    display: inline-block;
+    padding-top: 2vh;
+}
+
+.fa-cc-amex:before {
+    content: "\f1f3";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-mastercard:before {
+    content: "\f1f1";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-visa:before {
+    content: "\f1f0";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-paypal:before {
+    content: "\f1f4";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.copyright{
+    display: flex;
+    padding-top: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2.5vh;
 }
