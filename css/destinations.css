@@ -35,6 +35,14 @@ section{
     color: #5C98F2;
 }
 
+.white {
+    color: #fff;
+}
+
+.grey {
+    color: #8C8C8C;
+}
+
 /* Section 1 */
 
 #section-1 {
@@ -42,7 +50,7 @@ section{
 }
 
 h1 {
-    font-family: "DM Serif Display", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 
@@ -308,7 +316,83 @@ footer {
     padding: 4vh 0 0 3vh;
 }
 
+footer h1{
+    font-size: 1rem;
+    color: #ffff;
+    letter-spacing: 0.1vh;
+}
+
 footer .nav-logo{
     color: #fff;
     font-size: 4vh;
+}
+
+.contactf{
+    display: inline-block;
+    line-height: 3rem;
+    padding-top: 6vh;
+}
+
+.contact{
+    font-family: "Arial", sans-serif;
+    font-weight: 100;
+    color: #8C8C8C
+}
+
+.payment h1{
+    line-height: 5vh;
+}
+
+.payment{  
+    padding-top: 2vh;
+    gap: 1vh;
+}
+
+.pay {
+    font-family: "Arial";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2.5vh;
+}
+
+.icone{
+    display: inline-block;
+    padding-top: 2vh;
+}
+
+.fa-cc-amex:before {
+    content: "\f1f3";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-mastercard:before {
+    content: "\f1f1";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-visa:before {
+    content: "\f1f0";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.fa-cc-paypal:before {
+    content: "\f1f4";
+    font-size: 1.7rem ;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.copyright{
+    display: flex;
+    padding-top: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2.5vh;
 }
