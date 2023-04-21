@@ -592,7 +592,9 @@ footer .nav-logo {
     line-height: 2.5vh;
 }
 
-
+.fa-regular-fa-magnifying-glass {
+    content: \f002;
+}
 
 /* Menu hamburger */
 
