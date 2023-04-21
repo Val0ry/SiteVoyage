@@ -3,6 +3,7 @@
 
 /* General */
 
+
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +17,6 @@ li {
 
 a {
     text-decoration: none;
-}
-
-header {
-    padding: 0 0 0 5vh;
-
 }
 
 header h1 {
@@ -63,7 +59,7 @@ h1 {
 /* Section 2 */
 
 #section-2 {
-    padding: 5vh 0 0 5vh;
+    padding: 5vh 0 0 9vh;
 }
 
 
