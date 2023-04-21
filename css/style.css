@@ -152,22 +152,30 @@ form #section-1-btn-search {
 
 
 /* Animations cartes section-3 */
-
+#section-3 {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
 #tours {
-    width: 90%;
-    height: 100%;   
+    display: flex;        
     position: relative; 
-    padding-bottom: 62vh;
+    justify-content: center;
+    padding-bottom: 65vh;
 }
 
 #tours .cards {
-    position: absolute;    
+    position: absolute; 
+    border-radius: 20px;  
+    width: 90%;  
 }
 
 #tours .cards img {
+    width: 100%;
     height: 500px;
-    object-fit:contain;
-    width: 370px;
+    border-radius: 20px;    
+    object-fit:cover;
 }
 
 
