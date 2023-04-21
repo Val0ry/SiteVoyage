@@ -127,16 +127,8 @@ form #section-1-btn-search {
 }
 /*-------------------------- Section-2 --------------------------*/
 
-#section-2 {
- 
-}
 
 
-
-#section-2 article {
-    padding-top: 10%;
-    margin: 5%;
-}
 
 #section-2 article p {
     font-size: 1.25rem;
@@ -159,16 +151,77 @@ form #section-1-btn-search {
 
 
 
+/* Animations cartes section-3 */
+
+#tours {
+    width: 90%;
+    height: 100%;   
+    position: relative; 
+    padding-bottom: 62vh;
+}
+
+#tours .cards {
+    position: absolute;    
+}
+
+#tours .cards img {
+    height: 500px;
+    object-fit:contain;
+    width: 370px;
+}
+
+
+#tours .cards:nth-child(1){
+    animation: 20s ease 0s infinite normal none running animation-carte-1;
+}
+
+#tours .cards:nth-child(2){
+    animation: 20s ease 0s infinite normal none running animation-carte-2;
+}
+
+#tours .cards:nth-child(3){
+    animation: 20s ease 0s infinite normal none running animation-carte-3;
+}
+
+
+@keyframes animation-carte-1 {
+    0% { opacity: 0; transform: translateX(100%); }
+    1.5% { opacity: 1; transform: translateX(0); }
+    31.5% { opacity: 1; transform: translateX(0); }
+    33% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 0; transform: translateX(-100%); }
+}
+@keyframes animation-carte-2 {
+    0% { opacity: 0; transform: translateX(100%); }
+    33% { opacity: 0; transform: translateX(100%); }
+    34.5% { opacity: 1; transform: translateX(0); }
+    64.5% { opacity: 1; transform: translateX(0); }
+    66% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 0; transform: translateX(-100%); }
+
+}
+@keyframes animation-carte-3 {
+    0% { opacity: 0; transform: translateX(100%); }
+    66% { opacity: 0; transform: translateX(100%); }
+    67.5% { opacity: 1; transform: translateX(0); }
+    97.5% { opacity: 1; transform: translateX(0); }
+    99% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 0; transform: translateX(-100%); }
+}
+
+/* FIN Animations cartes section-3 */
+
+
 #section-3 {
     background-color: #f8f8f8;
 }
 
-#section-3 article {
+#section-3 article:first-child {
     padding-top: 10%;
     margin: 5%;
 }
 
-#section-3 article p {
+#section-3 article:first-child p {
     font-size: 1.25rem;
     line-height: 34px;
     color: #8c8c8c;
