@@ -14,3 +14,10 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+let form = document.querySelecter('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  return false;
+});
