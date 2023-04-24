@@ -47,6 +47,10 @@ form {
 #section-3-tours {
     display: none;
 }
+
+#section-5-desk {
+    display: none;
+}
 /*-------------------------- Header --------------------------*/
 
 
@@ -940,13 +944,53 @@ footer .nav-logo {
 
 
 
+   /*----------- SECTION-4 -----------*/
 
 
 
+   #section-4 h1{    
+    font-size: 4rem;
+    line-height: 4rem;
+}
 
+#section-4 article{
+    padding-top: 0;
+    text-align: center;       
+}
 
+#section-4 form {
+    width: 30vw;
+    margin: auto;
+}
 
+#section-4 button {
+    width: 24vw;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+/*----------- SECTION-5 -----------*/
+
+#section-5 {
+    display: none;
+}
+
+#section-5-desk {
+    display: flex;
+}
+   
+.comment-container {
+    width: 80vw;
+    margin: auto;
+    display: flex;     
+    justify-content: space-evenly; 
+    text-align: center; 
+}
+
+.comment-container article{
+    width: 15%;
+}
 
 
 
