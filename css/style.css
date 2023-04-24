@@ -35,6 +35,14 @@ form {
     font-family: "DM Sans", sans-serif;
 }
 
+
+.main-img {
+    display: none;
+}
+
+.tours-desktop {
+    display: none;
+}
 /*-------------------------- Header --------------------------*/
 
 
@@ -132,6 +140,10 @@ form #section-1-btn-search {
 /*-------------------------- Section-2 --------------------------*/
 
 
+#section-2 {    
+    overflow-x: hidden;
+}
+
 #section-2 article {
     padding-top: 10%;
     margin: 5%;
@@ -154,6 +166,13 @@ form #section-1-btn-search {
     padding: 15%;  
 }
 
+#section-2 #tours {
+    height: 40vh;
+}
+
+
+
+
 /*-------------------------- Section-3 --------------------------*/
 
 
@@ -165,11 +184,12 @@ form #section-1-btn-search {
     display: flex;
     flex-direction: column;
 }
+
 #tours {
     display: flex;        
     position: relative; 
     justify-content: center;
-    padding-bottom: 65vh;
+    height: 75vh;
 }
 
 #tours .cards {
@@ -185,6 +205,29 @@ form #section-1-btn-search {
     border-radius: 20px;
 }
 
+#section-3-figure{
+
+}
+#section-3-figure figcaption{
+font-family: 'roboto', sans-serif;
+display: block;
+color: #fff;
+position: relative;
+bottom: 200px;
+text-align: center;
+text-shadow: 7px 7px 7px #5C98F2;
+}
+
+#section-3-figure figcaption:nth-child(2){
+    font-size: 3rem;
+}
+
+#section-3-figure figcaption:nth-child(3){
+    font-size: 2rem;
+}
+#section-3-figure figcaption:nth-child(4) {
+    font-size: 2.5rem;
+}
 
 #tours .cards:nth-child(1){
     animation: 20s ease 0s infinite normal none running animation-carte-1;
@@ -241,15 +284,15 @@ form #section-1-btn-search {
     color: #8c8c8c;
 }
 
-#section-3-btn-all {
+#section-3-btn-all {  
+    z-index: 2; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #section-3-btn-all button {
     border: none;
-    background: none;
-    padding: 15%;  
+    background: none;     
 }
 
 
@@ -611,11 +654,11 @@ footer .nav-logo {
     border-bottom: 1px solid #E2E8F0;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 6;
     background-color: #ffff;
 }
 
-.navbar {
+.navbar {   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -663,7 +706,14 @@ footer .nav-logo {
     color: #000000;
 }
 
-@media only screen and (max-width: 768px) {
+
+/*-----------  MEDIA QUERIES DESKTOP -----------*/
+
+@media only screen and (max-width: 768px) 
+{
+
+    /*----------- HEADER -----------*/
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -705,4 +755,165 @@ footer .nav-logo {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+  
+
+ 
+   
 }
+
+
+@media only screen and (min-width: 768px) 
+{
+
+    /*----------- GENERAL -----------*/
+
+
+   /*----------- SECTION-1 -----------*/
+
+   #section-1 {
+    position: relative;
+   }
+
+ 
+    #section-1 article h1{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    #section-1 article {
+        padding-top: 0;
+        width: 55%;
+    }
+    #section-1 article p {
+      
+    }
+    .main-img {
+        display: block;
+        position: absolute;
+        background: url(../img/main.jpg) center/cover;       
+        top: 5vh;
+        right: 10vh;
+        width: 30%;
+        height: 80%;
+        border-radius: 2rem;
+        z-index: 0;    
+    }
+    .section-1-form-container {
+        flex-direction: row;        
+        width: 65vw;  
+        height: 15vh;  
+        margin-top: 1rem;     
+    }
+
+
+    .section-1-form {
+        position: relative;       
+        z-index: 1;
+        height: 15vh;
+        flex-direction: row;   
+        width: 67vw;
+        box-shadow: 0px 0px 5px #5C98F2;
+        margin-top: 0;
+    }
+    
+  
+
+    #section-1-btn {    
+        border-radius: 0 2rem 2rem 0 ;
+        width: 22.5vw;
+    }
+ 
+   
+   /*----------- SECTION-2 -----------*/
+
+
+  
+
+    #section-2 h1{    
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    #section-2 article{
+        padding-top: 0;
+        text-align: center;       
+    }
+
+    #section-2 article p {
+        margin: 1rem;      
+    }
+    #section-2-btn-all button {
+        padding: 0;
+    }
+    #tours {
+        display: none;
+    }
+
+    .tours-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;      
+    }
+
+    #section-2-btn-all button{
+        font-size: 1.5rem;
+        padding-bottom: 5vh;    
+    }
+
+
+   /*----------- SECTION-3 -----------*/
+
+    
+    
+
+    #section-3 h1{    
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    #section-3 article{
+        padding-top: 0;
+        text-align: center;       
+    }
+        
+    #section-3-btn-all button{
+        font-size: 1.5rem;
+        padding-bottom: 5vh;    
+    }
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} 
