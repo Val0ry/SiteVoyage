@@ -43,6 +43,10 @@ form {
 .tours-desktop {
     display: none;
 }
+
+#section-3-tours {
+    display: none;
+}
 /*-------------------------- Header --------------------------*/
 
 
@@ -878,13 +882,61 @@ footer .nav-logo {
         
     #section-3-btn-all button{
         font-size: 1.5rem;
-        padding-bottom: 5vh;    
+        margin-top: 5vh;        
     }
 
-    
-    
+    #desk-tours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;        
+    }
+  
+    #desk-tours > article:nth-child(1) {
+        margin: 0;
+    }
+
+    #desk-section-3-figure-1{
+        background: url(../img/tours/hon.jpg) center/cover;       
+        width: 28vw;
+        height: 70vh;
+        border-radius: 2rem;
+    }
+
+    #desk-section-3-figure-2{
+        background: url(../img/tours/louvre.jpg) center/cover;
+        width: 28vw;
+        height: 70vh;
+        border-radius: 2rem;
+    }
+
+    #desk-section-3-figure-3{
+        background: url(../img/tours/canada2.jpg) center/cover;
+        width: 28vw;
+        height: 70vh;
+        border-radius: 2rem;
+    }
+
+    .desk-cards figcaption{
+        font-family: 'roboto', sans-serif;
+        display: block;
+        color: #fff;    
+        text-align: center;
+        text-shadow: 1px 1px 5px #5C98F2;
+        }
+        .desk-cards figcaption:nth-child(1){
+            padding-top: 10%;
+            font-size: 4rem;
+        }
+
+        .desk-cards figcaption:nth-child(2){           
+            font-size: 2rem;
+        }
 
 
+        .desk-cards figcaption:nth-child(3){            
+            font-size: 3rem;
+        }
 
 
 
