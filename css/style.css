@@ -35,6 +35,9 @@ form {
     font-family: "DM Sans", sans-serif;
 }
 
+#desk-tours {
+    display: none;
+}
 
 .main-img {
     display: none;
@@ -48,9 +51,8 @@ form {
     display: none;
 }
 
-#section-5-desk {
-    display: none;
-}
+
+
 
 /*-------------------------- Header --------------------------*/
 
@@ -154,6 +156,7 @@ form #section-1-btn-search {
 
 #section-2 {
     overflow-x: hidden;
+    padding: 0;
 }
 
 #section-2 article {
@@ -183,7 +186,15 @@ form #section-1-btn-search {
     height: 40vh;
 }
 
+#section-2-btn-all button {
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
 
+#section-2-btn-all button a {
+    color: #000000;
+    font-weight: bold;
+}
 
 
 /*-------------------------- Section-3 --------------------------*/
@@ -202,14 +213,13 @@ form #section-1-btn-search {
     display: flex;
     position: relative;
     justify-content: center;
-    height: 75vh;
+    height: 65vh;
 }
 
 #tours .cards {
     position: absolute;
     border-radius: 20px;
     width: 90%;
-    padding-top: 20%;
 }
 
 #tours .cards img {
@@ -372,6 +382,13 @@ form #section-1-btn-search {
 #section-3-btn-all button {
     border: none;
     background: none;
+    font-size: 1rem;
+    margin-bottom: 7vh;
+}
+
+#section-3-btn-all button a {
+    color: #000000;
+    font-weight: bold;
 }
 
 
@@ -433,6 +450,10 @@ form #section-1-btn-search {
 
 /*-------------------------- Section-5 --------------------------*/
 
+#section-5 {
+    text-align: center;
+    background-color: #F8F8F8;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -497,7 +518,7 @@ form #section-1-btn-search {
 }
 
 /* Add a background color to the active dot/circle */
-.active,
+.dot-container .active,
 .dot:hover {
     background-color: #717171;
 }
@@ -1002,10 +1023,10 @@ footer .nav-logo {
     }
 
     .desk-cards figure {
-        width: 400px;
-        height: 80vh;
-        border-radius: 2rem; 
-              
+        width: 350px;
+        height: 60vh;
+        border-radius: 2rem;
+
     }
 
     #desk-section-3-figure-1 {
@@ -1035,7 +1056,7 @@ footer .nav-logo {
         content: "";
         background-color: #5C98F2;
         transform: scaleX(0);
-        height: 0.3rem;
+        height: 0.2rem;
         width: 100%;
         transition: transform .3s linear;
     }
@@ -1074,7 +1095,7 @@ footer .nav-logo {
         color: white;
     }
 
-    #desk-tours .desk-cards figure p{
+    #desk-tours .desk-cards figure p {
         font-size: 1rem;
         font-family: 'Roboto', sans-serif;
         color: white;
@@ -1130,25 +1151,92 @@ footer .nav-logo {
 
     /*----------- SECTION-5 -----------*/
 
+
     #section-5 {
-        display: none;
+        background-color: #F8F8F8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #section-5-desk {
-        display: flex;
-    }
-
-    .comment-container {
-        width: 80vw;
-        margin: auto;
-        display: flex;
-        justify-content: space-evenly;
+    #section-5 h1 {
+        font-size: 4rem;
+        line-height: 4rem;
         text-align: center;
+        padding: 2rem;
     }
 
-    .comment-container article {
-        width: 15%;
+    #section-5 .slideshow-container {
+
+        width: 60vw;
     }
+
+
+    /*----------- SECTION-6 -----------*/
+
+
+
+    #section-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #section-6 h1 {
+        line-height: 2rem;
+    }
+
+    #section-6 img {
+        margin-right: 2vw;
+    }
+
+    #section-6 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 0;
+    }
+
+    #section-6 ul li {
+        margin: 1%;
+    }
+
+
+
+    /*----------- FOOTER -----------*/
+
+    #footer .footer-desk-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footer .contactf {
+        padding: 0;
+    }
+
+    #footer .icone {
+        padding: 0;
+    }
+
+    #footer .payment {
+        padding: 0;
+    }
+
+    #footer p {
+        text-align: center;
+        padding-bottom: 20vh;
+    }
+
+
+
+
+
+
+
+
 
 
 
