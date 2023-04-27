@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url(../css/font.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+section {
+    padding: 0vh;
+}
+
+.blue {
+    color: #5C98F2;
+}
+
+.white {
+    color: #fff;
+}
+
+.grey {
+    color: #8C8C8C;
+}
+
+/* Section 1*/
+
+#section-eu-1 {
+    background-color: #F3F3F5;
+    text-align: center;
+    line-height: 6vh;
+    padding: 7vh 0 5vh 0;
+}
+
+#section-eu-1 h1 {
+    font-size: 1rem;
+    color: #636363;
+}
+
+#section-eu-1 h2 {
+    font-size: 2.5rem;
+}
+
+/* Section 2*/
+
+#section-eu-2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Card */
+
+.product-card {
+    width: 380px;
+    margin: 10% auto;
+    box-shadow: 0 2px 7px #0000004b;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.product-tumb {
+    height: 260px;
+    background: url(img/moscow.jpg) center/cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px 30px 15px 30px;
+    background: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.product-category {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    width: max-content;
+    display: inline-flex;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #2c97fb;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #2c97fb;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.review {
+    text-align: right;
+}
+
+.checked,
+.demi {
+    color: #2c97fb;
+}
+
+.nohref{
+    color: black;
+    font-size: 0.8rem;
+}
