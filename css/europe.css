@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-@import url(../css/font.css);
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url(font.css);
 
 /* General */
 
@@ -49,18 +48,20 @@ section {
 }
 
 #section-eu-1 h1 {
-    font-size: 1rem;
-    color: #636363;
+    font-size: 1.3rem;
+    color: #8c8c8c;
+    font-weight: 400;
 }
 
 #section-eu-1 h2 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
 /* Section 2*/
 
 #section-eu-2 {
     font-family: 'Roboto', sans-serif;
+    padding: 0;
 }
 
 /* Card */
@@ -73,9 +74,23 @@ section {
     border-radius: 15px;
 }
 
+.product-tumb2 {
+    height: 260px;
+    background: url(../img/tours/munich.jpg) center/cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-tumb1 {
+    height: 260px;
+    background: url(../img/tours/london.jpg) center/cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
 .product-tumb {
     height: 260px;
-    background: url(img/moscow.jpg) center/cover;
+    background: url(../img/tours/paris.jpg) center/cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -160,4 +175,12 @@ section {
 .nohref{
     color: black;
     font-size: 0.8rem;
+}
+
+.from{
+    color: #8c8c8c;
+    font-size: 0.9rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0;
 }
