@@ -198,3 +198,31 @@ p {
     width: 60vw;
     border-radius: 2rem;      
 }
+
+
+.comments {
+    font-family: 'Roboto', sans-serif;
+    padding: 3vh 0 3vh 0;
+}
+.comment {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #5C98F2;
+    border-radius: 2rem;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.comment h2 {
+    font-size: 20px;
+    color: #5C98F2;
+    margin-bottom: 10px;
+}
+.comment p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.comment .stars {
+    color: #5C98F2;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
