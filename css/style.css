@@ -568,6 +568,7 @@ q {
 
 /* Login/Register */
 
+<<<<<<< HEAD
 #section-login-form {
     display: flex;
     justify-content: center;
@@ -582,6 +583,15 @@ q {
     display: flex;
     --webkit-box-orient: vertical;
     --webkit-box-direction: normal;
+=======
+.login-form {
+    background: #fff;
+    width: 370px;
+    margin: 25vh auto;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+>>>>>>> origin/Antoni
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
@@ -678,14 +688,22 @@ q {
 }
 
 .login-form .action button:nth-child(2) {
+<<<<<<< HEAD
     background: #5C98F2;
+=======
+    background: #2d3b55;
+>>>>>>> origin/Antoni
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
 }
 
 .login-form .action button:nth-child(2):hover {
+<<<<<<< HEAD
     background: #5C78F3;
+=======
+    background: #3c4d6d;
+>>>>>>> origin/Antoni
 }
 
 
