@@ -856,7 +856,7 @@ footer .nav-logo {
         transition: 0.5s;
         z-index: 2;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
