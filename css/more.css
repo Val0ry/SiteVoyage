@@ -1,10 +1,13 @@
-
 .section-1-btn-more {
     display: flex;
     justify-content: center;
     padding: 5%;
 }
 
+.section-1-btn-more button {
+    border: none;
+    background: none;
+    font-size: 1rem;
 }
 
 .section-1-btn-more button a {
@@ -12,12 +15,19 @@
     font-weight: bold;
 }
 
-
+.divider {
+    margin: auto;
+    border-top: 1px solid #5C98F2;
+    width: 50vw;
 }
 
 
 .section-1-more h1 {
+    text-align: center;
+    padding: 5%;
+}
 
+.section-1-more p {
     text-align: start;
     padding-left: 15%;
     padding-right: 15%;
@@ -25,12 +35,42 @@
 
 
 body {
+    background-color: #f8fafc;
+}
 
+.container {
+    padding: 1rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    /* Hide scrollbar IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .slider::-webkit-scrollbar {
+    display: none;
+}
 
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
 }
 
 h2 {
@@ -44,6 +84,10 @@ h3 {
     padding: 5%;
 }
 
+h2,
+h3 {
+    font-family: 'roboto';
+
 }
 
 .fa {
@@ -55,4 +99,130 @@ p {
     padding: 5%;
 }
 
+.booking-form {
+   display: flex;
+   flex-direction: column;
+   width: 50vw;
+   margin: auto;  
+}
 
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.original-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.sale-price {
+    font-size: 1rem;
+    color: #5C98F2;
+    font-weight: bold;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.calendar-icon {
+    font-size: 2rem;
+    color: #5C98F2;
+    margin-right: 0.5rem;
+}
+
+.calendar-input {
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #5C98F2;
+}
+
+.guests-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.guests-dropdown {
+    width: 45%;
+}
+
+.guests-dropdown select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #5C98F2;
+    appearance: none;
+    background-color: transparent;
+}
+
+.guests-dropdown select::-ms-expand {
+    display: none;
+}
+
+.book-now-btn {
+    display: flex;
+    margin: auto;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 1rem;
+    background-color: #5C98F2;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.section-booking {
+    margin: 5vh auto 5vh auto;
+    
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 60vw;
+    border-radius: 2rem;      
+}
+
+
+.comments {
+    font-family: 'Roboto', sans-serif;
+    padding: 3vh 0 3vh 0;
+}
+.comment {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #5C98F2;
+    border-radius: 2rem;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.comment h2 {
+    font-size: 20px;
+    color: #5C98F2;
+    margin-bottom: 10px;
+}
+.comment p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.comment .stars {
+    color: #5C98F2;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
