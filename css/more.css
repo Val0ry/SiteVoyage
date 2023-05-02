@@ -33,7 +33,6 @@
     padding-right: 15%;
 }
 
-
 body {
     background-color: #f8fafc;
 }
@@ -41,6 +40,8 @@ body {
 .container {
     padding: 1rem;
 }
+
+
 
 .slider-wrapper {
     position: relative;
@@ -100,10 +101,9 @@ p {
 }
 
 .booking-form {
-   display: flex;
-   flex-direction: column;
-   width: 50vw;
-   margin: auto;  
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .price-container {
@@ -180,8 +180,8 @@ p {
     height: 5vh;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
     padding: 1rem;
     background-color: #5C98F2;
     color: white;
@@ -191,38 +191,109 @@ p {
     cursor: pointer;
 }
 
+
 .section-booking {
     margin: 5vh auto 5vh auto;
-    
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    width: 60vw;
-    border-radius: 2rem;      
+    width: 80vw;
+    border-radius: 2rem;
 }
 
 
 .comments {
     font-family: 'Roboto', sans-serif;
-    padding: 3vh 0 3vh 0;
+
 }
+
 .comment {
     margin: 20px;
-    padding: 20px;
     border: 1px solid #5C98F2;
     border-radius: 2rem;
     background-color: #F2F2F2;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.comment p {
+    padding: 0;
+}
+
 .comment h2 {
     font-size: 20px;
     color: #5C98F2;
     margin-bottom: 10px;
 }
+
 .comment p {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 .comment .stars {
     color: #5C98F2;
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.container-dot {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    #description-more h2 {
+        padding: 5% 15% 0 15%;
+        font-size: 5rem;
+    }
+
+    #description-more h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #description-more p {
+        padding: 2% 15% 2% 15%;
+        font-size: 1.5rem;
+    }
+
+    #description-more p .book-now-btn {
+        transition: 0.5s;
+    }
+
+    .book-now-btn:hover {
+        transition: 0.5s;
+        color: #5C98F2;
+        border: 2px solid #5C98F2;
+        background-color: #fff;
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 50vw;
+    }
+
+    .comment {
+        padding: 2%;
+    }
+
+    .comment h2 {
+        padding: 0;
+    }
+    .container-dot {
+        width: 10vw;
+        display: flex;
+        justify-content: center;        
+        margin: auto;        
+    }
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-color: #5C98F2;
+        border-radius: 50%;        
+        margin: auto; 
+    }
+
+ 
 }
