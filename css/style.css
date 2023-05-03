@@ -568,20 +568,13 @@ q {
 
 /* Login/Register */
 
-#section-login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .login-form {
     background: #fff;
-    width: 20vh;
-    transform: scale(2.2);
+    width: 370px;
+    margin: 25vh auto;
     display: flex;
-    --webkit-box-orient: vertical;
-    --webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
@@ -678,14 +671,14 @@ q {
 }
 
 .login-form .action button:nth-child(2) {
-    background: #5C98F2;
+    background: #2d3b55;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
 }
 
 .login-form .action button:nth-child(2):hover {
-    background: #5C78F3;
+    background: #3c4d6d;
 }
 
 
@@ -856,7 +849,7 @@ footer .nav-logo {
         transition: 0.5s;
         z-index: 2;
         box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {

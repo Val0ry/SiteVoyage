@@ -61,6 +61,7 @@ section {
 
 /* Section 2 */
 
+<<<<<<< HEAD
 #section-ds-2 {
     padding: 5vh 0 0 0;
 }
@@ -68,6 +69,10 @@ section {
 #section-ds-2 article {
     display: flex;
     justify-content: center;
+=======
+#section-2 {
+    padding: 5vh 0 0 9vh;
+>>>>>>> origin/Antoni
 }
 
 
