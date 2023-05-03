@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(font.css);
+
+section {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+/* Section 1  */
+
+.section-p-1 {
+	padding-top: 8vh;
+}
+
+.section-p-1 h1{
+	font-size: 2.5rem;
+	font-weight: 400;
+	font-family: "DM Serif Display",serif;
+} 
+
+.review {
+	padding: 1.5vh 0 0 0;
+	align-items: center;
+}
+
+.reviewtext {
+	padding: 0 0 0 2vh;
+}
+
+.checked,
+.demi {
+    color: #2c97fb;
+}
+
+#nohref{
+    color: lightgrey;
+    font-size: 0.8rem;
+}
+
+.indication {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: 19px;
+	padding-left: 9px;
+}
+
+.indication p {
+	display: inline-flex;
+	gap: 0.5rem;
+}
+
+.clock,
+.user,
+.wifi {
+	font-size: 1.5rem;
+	transform: translate(-50%, 0);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  padding-top: 20px;
+}
+
+.image-large {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  height: 200px;
+  background: url("../img/tours/france.jpg") center/cover;
+  border-radius: 7px;
+}
+
+.image-small {
+  height: 100px;
+  background: url("../img/tours/france2.jpg") center/cover;
+  border-radius: 7px;
+}
+
+.image-small2 {
+  height: 100px;
+  background: url("../img/tours/france3.jpg") center/cover;
+  border-radius: 7px;
+}
+
+.image-small3 {
+  height: 100px;
+  background: url("../img/tours/france4.jpg") center/cover;
+  border-radius: 7px;
+}
+
+.image-small4 {
+  height: 100px;
+  background: url("../img/tours/france5.jpg") center/cover;
+  border-radius: 7px;
+}
+
+.details {
+	padding-top: 40px;
+}
+
+.details h1 {
+	font-size: 1.7rem;
+}
+
+.details p {
+	padding-top: 20px;
+	line-height: 25.5px;
+	font-size: 17px;
+	color: #594d6D;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+.divider {
+    margin: auto;
+    margin-top: 20px;
+    border-top: 1px solid #D3D3D3;
+    width: 60vw;
+}
+
+.booking-form {
+   display: flex;
+   flex-direction: column;  
+   margin: auto;  
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.original-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.sale-price {
+    font-size: 1rem;
+    color: #5C98F2;
+    font-weight: bold;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.calendar-icon {
+    font-size: 2rem;
+    color: #5C98F2;
+    margin-right: 0.5rem;
+}
+
+.calendar-input {
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #5C98F2;
+}
+
+.guests-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.guests-dropdown {
+    width: 45%;
+}
+
+.guests-dropdown select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #5C98F2;
+    appearance: none;
+    background-color: transparent;
+}
+
+.guests-dropdown select::-ms-expand {
+    display: none;
+}
+
+.book-now-btn {
+    display: flex;
+    margin: auto;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding: 1rem;
+    background-color: #5C98F2;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;    
+}
+
+
+.section-booking {
+    margin: 5vh auto 5vh auto;    
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 80vw;
+    border-radius: 2rem;      
+}
+
+
+.comments {
+    font-family: 'Roboto', sans-serif;
+    
+}
+.comment {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #5C98F2;
+    border-radius: 2rem;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.comment h2 {
+    font-size: 20px;
+    color: #5C98F2;
+    margin-bottom: 10px;
+}
+.comment p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.comment .stars {
+    color: #5C98F2;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-booking p {
+	text-align: center;
+	padding: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.section-p-1 h1{
+	font-size: 4rem;
+	line-height: 4rem;
+	padding-bottom: 1vh;
+}
+	
+	.conteneur-p-1 {
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+	}
+
+	.review {
+	display: flex;
+	font-size: 1.2rem;
+	padding-bottom: 1vh;
+}
+
+	.indication {
+	display: flex;
+ 	flex-direction: row;
+ 	margin: auto;
+ 	gap: 3rem;
+ 	font-size: 1.2rem;
+ 	padding-bottom: 1vh;
+	}
+
+	.indication p {
+	gap: 0;
+	}
+
+}
