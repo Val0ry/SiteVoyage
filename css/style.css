@@ -456,22 +456,22 @@ form #section-1-btn-search {
 }
 
 /* Slideshow container */
-.slideshow-container {
+#section-5 .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
     border-radius: 30px;
 }
 
 /* Slides */
-.mySlides {
+#section-5 .mySlides {
     display: none;
     padding: 40px;
     text-align: center;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+#section-5 .prev,
+#section-5 .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -486,27 +486,27 @@ form #section-1-btn-search {
 }
 
 /* Position the "next button" to the right */
-.next {
+#section-5 .next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+#section-5 .prev:hover,
+#section-5 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
 /* The dot/bullet/indicator container */
-.dot-container {
+#section-5 .dot-container {
     text-align: center;
     padding: 20px;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+#section-5 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -518,19 +518,19 @@ form #section-1-btn-search {
 }
 
 /* Add a background color to the active dot/circle */
-.dot-container .active,
-.dot:hover {
+#section-5 .dot-container .active,
+#section-5 .dot:hover {
     background-color: #717171;
 }
 
 /* Add an italic font style to all quotes */
-q {
+#section-5 q {
     font-style: italic;
     font-size: 1.5rem;
 }
 
 /* Add a blue color to the author */
-.author {
+#section-5 .author {
     color: cornflowerblue;
 }
 
