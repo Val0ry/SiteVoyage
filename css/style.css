@@ -456,22 +456,22 @@ form #section-1-btn-search {
 }
 
 /* Slideshow container */
-#section-5 .slideshow-container {
+.slideshow-container {
     position: relative;
     background: #f1f1f1f1;
     border-radius: 30px;
 }
 
 /* Slides */
-#section-5 .mySlides {
+.mySlides {
     display: none;
     padding: 40px;
     text-align: center;
 }
 
 /* Next & previous buttons */
-#section-5 .prev,
-#section-5 .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -486,27 +486,27 @@ form #section-1-btn-search {
 }
 
 /* Position the "next button" to the right */
-#section-5 .next {
+.next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-#section-5 .prev:hover,
-#section-5 .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
 /* The dot/bullet/indicator container */
-#section-5 .dot-container {
+.dot-container {
     text-align: center;
     padding: 20px;
 }
 
 /* The dots/bullets/indicators */
-#section-5 .dot {
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -518,19 +518,19 @@ form #section-1-btn-search {
 }
 
 /* Add a background color to the active dot/circle */
-#section-5 .dot-container .active,
-#section-5 .dot:hover {
+.dot-container .active,
+.dot:hover {
     background-color: #717171;
 }
 
 /* Add an italic font style to all quotes */
-#section-5 q {
+q {
     font-style: italic;
     font-size: 1.5rem;
 }
 
 /* Add a blue color to the author */
-#section-5 .author {
+.author {
     color: cornflowerblue;
 }
 
@@ -568,13 +568,19 @@ form #section-1-btn-search {
 
 /* Login/Register */
 
+#section-login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .login-form {
     background: #fff;
-    width: 370px;
-    margin: 25vh auto;
+    transform: scale(2.5);
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    --webkit-box-orient: vertical;
+    --webkit-box-direction: normal;
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
@@ -671,14 +677,14 @@ form #section-1-btn-search {
 }
 
 .login-form .action button:nth-child(2) {
-    background: #2d3b55;
+    background: #5C98F2;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
 }
 
 .login-form .action button:nth-child(2):hover {
-    background: #3c4d6d;
+    background: #5C78F3;
 }
 
 
@@ -849,7 +855,7 @@ footer .nav-logo {
         transition: 0.5s;
         z-index: 2;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -880,16 +886,12 @@ footer .nav-logo {
     }
 
 
-
-
-
 }
 
 
 @media only screen and (min-width: 768px) {
 
     /*----------- GENERAL -----------*/
-
 
     /*----------- SECTION-1 -----------*/
 
@@ -1230,7 +1232,10 @@ footer .nav-logo {
         padding-bottom: 20vh;
     }
 
-
+    .login-form {
+    width: 35vh;
+    transform: scale(1.3);
+    }
 
 
 

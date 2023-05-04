@@ -25,7 +25,8 @@ header h1 {
 }
 
 section {
-    padding: 2vh;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .blue {

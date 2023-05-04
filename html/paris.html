@@ -52,14 +52,51 @@
         <p><i class="fa fa-user-o user"></i><span>Max Guests : 39</span></p>
         <p><i class="fa fa-plug wifi"></i><span>Wifi Available</span></p>
     </div>
-    <div class="grid-container">
-      <div class="image-large"></div>
-      <div class="image-small"></div>
-      <div class="image-small2"></div>
-      <div class="image-small3"></div>
-      <div class="image-small4"></div>
-  </div>
-  <div class="details">
+    <div class="slider">
+        <div class="grid-container">
+          <div class="image-large">
+            <img id="image-1" src="../img/tours/france.jpg" alt="Image large">
+        </div>
+        <div class="image-small">
+            <img src="../img/tours/france2.jpg" alt="Image small">
+        </div>
+        <div class="image-small2">
+            <img src="../img/tours/france3.jpg" alt="Image small 2">
+        </div>
+        <div class="image-small3">
+            <img src="../img/tours/france4.jpg" alt="Image small 3">
+        </div>
+        <div class="image-small4">
+            <img src="../img/tours/france5.jpg" alt="Image small 4">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="../img/tours/france.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france5.jpg" style="width:100%">
+      </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+</div>
+</div>
+
+</div>
+</div>
+<div class="details">
     <h1>Detail</h1>
     <p>Arrive at the Paris airport and transfer to your hotel located in the picturesque Montmartre district. Enjoy the afternoon exploring the charming hillside of Montmartre, the famous Moulin Rouge and the Sacré-Coeur with its breathtaking views of the city. End your evening with a romantic dinner at one of the many gourmet restaurants in the area.
         <br><br>
@@ -73,19 +110,14 @@
 <section class="section-booking">
     <p>Book your trip now, we'll take care of everything, departure from your doorstep and return to your doorstep!
     </p>
-    <p><i class="fa fa-sun-o" aria-hidden="true"></i>
-        4 Days - <i class="fa fa-moon-o" aria-hidden="true"></i>
-    3 Nights </p>
     <p>From $530.99/pers</p>
     <form class="booking-form">
         <div class="price-container">
             <span class="sale-price">$530.99</span>
         </div>
         <div class="calendar-container">
-
             <p>Departure date</p>
-            <div>
-
+            <div class="date">
                 <i class="fa fa-calendar-o"></i>
                 <input type="date" id="start" name="trip-start" value="2023-04-01" min="2023-04-01"
                 max="2025-01-01">
@@ -141,5 +173,5 @@
 </footer>
 </body>
 <script src="../js/main.js"></script>
-<script src="https://kit.fontawesome.com/0b312f0371.js" crossorigin="anonymous"></script>
+<script src="../js/modal.js"></script>
 </html>
