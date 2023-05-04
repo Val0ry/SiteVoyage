@@ -1,8 +1,3 @@
-section {
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
 .section-1-btn-more {
     display: flex;
     justify-content: center;
@@ -44,6 +39,7 @@ body {
 
 .container {
     padding: 1rem;
+    display: block;
 }
 
 
@@ -68,7 +64,7 @@ body {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
-    --ms-overflow-style: none;
+    -ms-overflow-style: none;
     /* Hide scrollbar IE and Edge */
     scrollbar-width: none;
     /* Hide scrollbar Firefox */
@@ -245,26 +241,43 @@ p {
     margin-bottom: 10px;
 }
 
-.container-dot {
-    display: none;
-}
+
 
 @media only screen and (min-width: 768px) {
 
 
+    
+    article {
+        width: 70vw;
+        height: 55vh;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+        padding-top: 5vh;    
+        padding-bottom: 5vh;     
+    }
+
+    
     #description-more h2 {
-        padding: 5% 15% 0 15%;
-        font-size: 5rem;
+        padding: 0;
+        font-size: 3rem;   
+        text-transform: uppercase;
+        
     }
 
     #description-more h3 {
         font-size: 2rem;
         text-align: center;
+        padding: 0;
     }
 
     #description-more p {
-        padding: 2% 15% 2% 15%;
+        padding: 5%;
         font-size: 1.5rem;
+    }
+
+    #description-more > div > article > p:nth-child(4) {
+        align-self: center;
     }
 
     #description-more p .book-now-btn {
@@ -292,43 +305,47 @@ p {
     .comment h2 {
         padding: 0;
     }
-
-
-
-
-    .container-dot {
-        width: 10vw;
-        display: flex;
-        justify-content: center;        
-        margin: auto;        
+    .section-booking p {
+        padding: 2%;
     }
-    .dot {
-        display: block;
-        height: 25px;
-        width: 25px;
-        background-color: #5C98F2;
-        border-radius: 50%;        
-        margin: auto; 
-    }
-
-    .mySlides {
+    .section-booking {
+        width: 50vw;
         padding: 0;
     }
 
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
+   
+
+    .container {
+        width: 80vw;
+        margin: auto;
+        padding: 0;
+        background-color:#F8FAFC
       }
-      
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
+    
+      .slider-wrapper {
+        max-width: 100%;
+        margin: 0;
       }
+    
+      .mySlides {
+        padding: 0.5rem;
+      }
+    
+      .slider {
+        aspect-ratio: unset;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);        
+        overflow: hidden;
+      }
+    
+      .slider img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
 
  
- 
 
- 
-/**/
  
 }
