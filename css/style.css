@@ -124,6 +124,7 @@ form {
     border-bottom-right-radius: 2rem;
     margin-left: 0;
     margin-right: 0;
+    
 }
 
 form #section-1-btn {
@@ -138,7 +139,11 @@ form #section-1-btn-search {
     padding: 10px;
     background: none;
     color: #f8f8f8;
-    font-size: 1rem;
+    font-size: 1rem;    
+}
+
+form #section-1-btn input {
+    cursor: pointer;
 }
 
 
@@ -682,6 +687,103 @@ form #section-1-btn-search {
 }
 
 
+/* Section - 7 */
+
+
+
+
+
+
+
+
+
+
+
+
+#section-7 {
+    
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-form-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .contact-form-container h2 {
+    color: #5C98F2;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #contact-form {
+    padding: 20px;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  
+  #contact-form textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  #contact-form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #5C98F2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
@@ -1014,8 +1116,10 @@ footer .nav-logo {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        flex-shrink: none;
-        flex-wrap: wrap;
+        flex-shrink: none;       
+        width: 70vw;
+        margin: auto;
+        gap: 1vw;
     }
 
     #desk-tours>article:nth-child(1) {
@@ -1023,23 +1127,33 @@ footer .nav-logo {
     }
 
     .desk-cards figure {
-        width: 350px;
-        height: 60vh;
-        border-radius: 2rem;
+        width: 240px;
+        height: 40vh;
+        border-radius: 0.3rem;
 
     }
 
     #desk-section-3-figure-1 {
-        background: url(../img/tours/hon.jpg) center/cover;
+        background: url(../img/tours/hawaii3.jpg) center/cover;
     }
 
     #desk-section-3-figure-2 {
-        background: url(../img/tours/louvre.jpg) center/cover;
+        background: url(../img/tours/france3.jpg) center/cover;
     }
 
     #desk-section-3-figure-3 {
-        background: url(../img/tours/canada2.jpg) center/cover;
+        background: url(../img/tours/canada.jpg) center/cover;
     }
+
+    #desk-section-3-figure-4 {
+        background: url(../img/tours/okinawa2.jpg) center/cover;
+    }
+
+
+    #desk-section-3-figure-5 {
+        background: url(../img/tours/peru2.jpg) center/cover;
+    }
+
 
     /* Tours cards-desktop txt + anim */
 
@@ -1080,12 +1194,12 @@ footer .nav-logo {
         transition: all 1s;
         transform: translateY(100%);
         bottom: 100px;
-        height: 25%;
+        height: 35%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        border-radius: 0 0 2rem 2rem;
+        
         background-color: #ffffff00;
     }
 
@@ -1104,7 +1218,7 @@ footer .nav-logo {
     .right button {
         border: none;
         background: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .right button a {
@@ -1114,6 +1228,7 @@ footer .nav-logo {
 
     .stars-tours-container {
         color: #5C98F2;
+        font-size: 0.5rem;
     }
 
 
