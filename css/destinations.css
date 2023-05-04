@@ -4,6 +4,10 @@
 
 /* General */
 
+html,
+body {
+    scroll-behavior: smooth !important;
+}
 
 * {
     margin: 0;
@@ -143,7 +147,7 @@ section {
 .card h4 {
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
-    margin: 0;
+    margin: 0 0 100px 25px;
     font-size: 1.1em;
     font-weight: normal;
     opacity: 0;

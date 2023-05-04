@@ -3,6 +3,11 @@
 
 /* General */
 
+html,
+body {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -193,5 +198,3 @@ header h1 {
     width: 100%;
 }
 }
-
-/**/
