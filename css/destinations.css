@@ -62,13 +62,18 @@ section {
 
 /* Section 2 */
 
+.destination-cont {
+    margin: auto;
+    width: 80%;
+}
+
 #section-ds-2 {
-    padding: 5vh 0 0 0;
+    padding: 5vh 0 5vh 0;
 }
 
 #section-ds-2 article {
     display: flex;
-    justify-content: center;
+
 }
 
 
@@ -78,15 +83,15 @@ section {
     position: relative;
     align-items: center;
     display: inline-block;
-    margin: 0 0 35px 0;
     min-width: 230px;
-    max-width: 290px;
+    max-width: 490px;
     width: 100%;
+    margin: 10px 10px 10px 10px;
     height: 100%;
     text-align: left;
     font-family: "DM Serif Display";
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     z-index: 1;
 }
 
@@ -315,6 +320,11 @@ section {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .card {
+        width: 300px;
+    }
+
 }
 
 /* Footer */
@@ -401,4 +411,34 @@ footer .nav-logo {
     font-size: 1rem;
     color: #fff;
     line-height: 2.5vh;
+}
+
+@media screen and (min-width: 768px) {
+    #section-ds-2 article {
+    display: inline-flex;
+}
+
+    .destination-cont {
+    width: 80.9%;
+    margin: auto;
+}
+
+.payment,
+.icone,
+.contactf,
+.copyright {
+    padding: 0;
+}
+
+.copyright {
+    transform: translate(0, 30%);
+}
+
+footer {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+}
+
 }

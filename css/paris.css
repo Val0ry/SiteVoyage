@@ -100,6 +100,9 @@ section {
   height: 100px;
 }
 
+.slider {
+    padding-top: 2rem;
+}
 
 .grid-container {
   display: grid;
@@ -303,9 +306,9 @@ to {
 }
 
 .booking-form {
- display: flex;
- flex-direction: column;  
- margin: auto;  
+   display: flex;
+   flex-direction: column;  
+   margin: auto;  
 }
 
 .price-container {
@@ -434,6 +437,7 @@ to {
 	padding: 5%;
 }
 
+
 .date {
     display: flex;
     width: 120px;
@@ -464,22 +468,18 @@ to {
   }
 
   .review {
+     display: flex;
+     font-size: 1.2rem;
+     padding-bottom: 1vh;
+ }
+
+ .indication {
    display: flex;
+   flex-direction: row;
+   margin: auto;
+   gap: 3rem;
    font-size: 1.2rem;
    padding-bottom: 1vh;
-}
-
-.indication {
- display: flex;
- flex-direction: row;
- margin: auto;
- gap: 3rem;
- font-size: 1.2rem;
- padding-bottom: 1vh;
-}
-
-.indication p {
-	gap: 0;
 }
 
 .section-booking {
@@ -525,6 +525,24 @@ to {
     height: 25vh; 
 }
 
+.payment,
+.icone,
+.contactf,
+.copyright {
+    padding: 0;
+}
+
+.copyright {
+    transform: translate(0, 30%);
+}
+
+footer {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+}
+
 }
 
 @media only screen and (max-width: 764px) {
@@ -547,8 +565,8 @@ to {
     }
 }
 
-@media only screen and (max-width: 390px) {
-        .grid-container {
+@media only screen and (max-width: 500px) {
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-template-rows: auto;

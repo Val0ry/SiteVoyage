@@ -64,6 +64,7 @@ header h1 {
     padding: 0;
 }
 
+
 /* Card */
 
 .product-card {
@@ -190,6 +191,5 @@ header h1 {
 .card-paris {
     display: inline-flex;
     width: 100%;
-    margin-top: -135px;
 }
 }
