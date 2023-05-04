@@ -1207,7 +1207,8 @@ footer .nav-logo {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        flex-shrink: none;       
+        flex-shrink: none;  
+        flex-wrap: wrap;     
         width: 70vw;
         margin: auto;
         gap: 1vw;
@@ -1420,27 +1421,7 @@ footer .nav-logo {
 
     /*----------- FOOTER -----------*/
 
-    #footer .footer-desk-container {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #footer .contactf {
-        padding: 0;
-    }
-
-    #footer .icone {
-        padding: 0;
-    }
-
-    #footer .payment {
-        padding: 0;
-    }
-
-    #footer p {
-        text-align: center;
-        padding-bottom: 20vh;
-    }
+  
 
 
 
@@ -1469,5 +1450,27 @@ footer .nav-logo {
 
 
 
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.payment,
+.icone,
+.contactf,
+.copyright {
+    padding: 0;
+}
+
+.copyright {
+    transform: translate(0, 30%);
+}
+
+footer {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+}
 
 }
