@@ -1404,6 +1404,7 @@ footer .nav-logo {
         justify-content: space-around;
         align-items: center;
         row-gap: 0;
+        padding-bottom: 2vh;
     }
 
     #section-6 ul li {
