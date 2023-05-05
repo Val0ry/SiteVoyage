@@ -4,6 +4,10 @@
 
 /* General */
 
+html,
+body {
+    scroll-behavior: smooth !important;
+}
 
 * {
     margin: 0;
@@ -25,7 +29,8 @@ header h1 {
 }
 
 section {
-    padding: 2vh;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .blue {
@@ -61,6 +66,17 @@ section {
 
 /* Section 2 */
 
+.destination-cont {
+    margin: auto;
+    width: 80%;
+}
+
+#section-ds-2 {
+    padding: 5vh 0 5vh 0;
+}
+
+#section-ds-2 article {
+    display: flex;
 
 }
 
@@ -71,15 +87,15 @@ section {
     position: relative;
     align-items: center;
     display: inline-block;
-    margin: 0 0 35px 0;
     min-width: 230px;
-    max-width: 290px;
+    max-width: 490px;
     width: 100%;
+    margin: 10px 10px 10px 10px;
     height: 100%;
     text-align: left;
     font-family: "DM Serif Display";
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     z-index: 1;
 }
 
@@ -131,7 +147,7 @@ section {
 .card h4 {
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
-    margin: 0;
+    margin: 0 0 100px 25px;
     font-size: 1.1em;
     font-weight: normal;
     opacity: 0;
@@ -252,6 +268,7 @@ section {
 .nav-link {
     font-weight: 400;
     color: #000000;
+    font-family: "DM Sans";
 }
 
 .nav-link:hover {
@@ -307,6 +324,11 @@ section {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .card {
+        width: 300px;
+    }
+
 }
 
 /* Footer */
@@ -393,4 +415,41 @@ footer .nav-logo {
     font-size: 1rem;
     color: #fff;
     line-height: 2.5vh;
+}
+
+@media screen and (min-width: 768px) {
+    #section-ds-2 article {
+    display: inline-flex;
+}
+
+    .destination-cont {
+    width: 80.9%;
+    margin: auto;
+}
+
+.payment,
+.icone,
+.contactf,
+.copyright {
+    padding: 0;
+}
+
+.copyright {
+    transform: translate(0, 30%);
+}
+
+footer {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .card h3 {
+        font-size: 1rem;
+    }
 }

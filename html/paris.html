@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/destinations.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/paris.css">
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/paris.css">
     <title>Paris</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-logo">Desti<span class="blue">Nations</span></a>
+            <a href="../html/index.html" class="nav-logo">Desti<span class="blue">Nations</span></a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -36,27 +37,119 @@
     </header>
 
     <section class="section-p-1">
-     <h1>Paris - All<br>Stunning places</h1>
-     <div class="review">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-o demi"></span><a href="#" class="reviewtext" id="nohref">(1650 Reviews)</a>
+        <div class="conteneur-p-1">
+         <h1>Paris - All Stunning places</h1>
+         <div class="review">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o demi"></span><a href="#" class="reviewtext" id="nohref">(1650 Reviews)</a>
+        </div>
     </div>
     <div class="indication">
         <p><i class="fa fa-clock-o clock"></i><span>8 Hours</span></p>
         <p><i class="fa fa-user-o user"></i><span>Max Guests : 39</span></p>
-        <p><i class="fa fa-user-o user"></i><span>Wifi Available </span></p>
-        <span>May - Aug</span>
+        <p><i class="fa fa-wifi wifi"></i><span>Wifi Available</span></p>
     </div>
-    <div>
-      <img class="paris1" src="">
-      <img class="paris2" src="">
-      <img class="paris3" src="">
-  </div>
-</section>
+    <div class="slider">
+        <div class="grid-container">
+          <div class="image-large">
+            <img id="image-1" src="../img/tours/france.jpg" alt="Image large">
+        </div>
+        <div class="image-small">
+            <img src="../img/tours/france2.jpg" alt="Image small">
+        </div>
+        <div class="image-small2">
+            <img src="../img/tours/france3.jpg" alt="Image small 2">
+        </div>
+        <div class="image-small3">
+            <img src="../img/tours/france4.jpg" alt="Image small 3">
+        </div>
+        <div class="image-small4">
+            <img src="../img/tours/france5.jpg" alt="Image small 4">
+        </div>
+    </div>
 
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="../img/tours/france.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="../img/tours/france5.jpg" style="width:100%">
+      </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+</div>
+</div>
+
+</div>
+</div>
+<div class="details">
+    <h1>Detail</h1>
+    <p>Arrive at the Paris airport and transfer to your hotel located in the picturesque Montmartre district. Enjoy the afternoon exploring the charming hillside of Montmartre, the famous Moulin Rouge and the Sacré-Coeur with its breathtaking views of the city. End your evening with a romantic dinner at one of the many gourmet restaurants in the area.
+        <br><br>
+        Start your day with a guided tour of the city of Paris, passing by the most famous monuments such as the Eiffel Tower, the Arc de Triomphe, the Place de la Concorde, the Jardin des Tuileries and the Louvre. In the afternoon, take a romantic stroll along the Seine or a river cruise to discover Paris from another angle.
+        Visit the famous Musée d'Orsay, home to one of the world's largest collections of Impressionist and Post-Impressionist art. After visiting the museum, head to the beautiful Jardin des Tuileries for a romantic stroll and a lunch break in one of its charming cafés. In the afternoon, head to the Latin Quarter and visit the Pantheon, one of the most famous monuments in Paris.
+        <br><br>
+        End your romantic weekend by exploring the chic Saint-Germain-des-Prés district and shopping in the luxury fashion boutiques and local markets. Enjoy French culinary specialties at one of the many restaurants in the area. Afterwards, enjoy an evening show at the Moulin Rouge.
+    Transfer to the airport for your return flight. Enjoy your last moments in the city of love before saying goodbye to Paris.</p>
+</div>
+<div class="divider"></div>
+<section class="section-booking">
+    <p>Book your trip now, we'll take care of everything, departure from your doorstep and return to your doorstep!
+    </p>
+    <p>From $530.99/pers</p>
+    <form class="booking-form">
+        <div class="price-container">
+            <span class="sale-price">$530.99</span>
+        </div>
+        <div class="calendar-container">
+            <p>Departure date</p>
+            <div class="date">
+                <i class="fa fa-calendar-o"></i>
+                <input type="date" id="start" name="trip-start" value="2023-04-01" min="2023-04-01"
+                max="2025-01-01">
+            </div>
+        </div>
+        <div class="guests-container">
+            <div class="guests-item">
+                <label for="adults">Adults</label>
+                <select id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="3">5</option>
+                </select>
+            </div>
+            <div class="guests-item">
+                <label for="children">Children</label>
+                <select id="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+            </div>
+        </div>
+        <button class="book-now-btn" type="submit">Book Now</button>
+    </form>
+</section>
+</section>
 <footer>
     <a class="nav-logo">Desti<span class="blue">Nations</span></a>
     <ul class="contactf">
@@ -80,5 +173,5 @@
 </footer>
 </body>
 <script src="../js/main.js"></script>
-<script src="https://kit.fontawesome.com/0b312f0371.js" crossorigin="anonymous"></script>
+<script src="../js/modal.js"></script>
 </html>

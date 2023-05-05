@@ -3,12 +3,21 @@
 
 /* General */
 
+html,
+body {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+section {
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
 li {
     list-style: none;
@@ -20,10 +29,6 @@ a {
 
 header h1 {
     font-size: 25px;
-}
-
-section {
-    padding: 0vh;
 }
 
 .blue {
@@ -63,6 +68,7 @@ section {
     font-family: 'Roboto', sans-serif;
     padding: 0;
 }
+
 
 /* Card */
 
@@ -183,4 +189,12 @@ section {
     font-family: "DM Sans", sans-serif;
     font-weight: 100;
     letter-spacing: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+.card-paris {
+    display: inline-flex;
+    width: 100%;
+}
 }

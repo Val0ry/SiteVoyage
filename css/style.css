@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url(font.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap%27');
 
 
 /*-------------------------- GENERAL  --------------------------*/
+
+html,
+body {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@
 }
 
 section {
-    padding: 2vh;
+    padding: 4vh;
 }
 
 .white {
@@ -51,15 +59,11 @@ form {
     display: none;
 }
 
-
-
-
 /*-------------------------- Header --------------------------*/
 
 
 
 /*-------------------------- Section-1 --------------------------*/
-
 
 #section-1 {
     background-color: #f8f8f8;
@@ -124,6 +128,7 @@ form {
     border-bottom-right-radius: 2rem;
     margin-left: 0;
     margin-right: 0;
+    
 }
 
 form #section-1-btn {
@@ -138,7 +143,11 @@ form #section-1-btn-search {
     padding: 10px;
     background: none;
     color: #f8f8f8;
-    font-size: 1rem;
+    font-size: 1rem;    
+}
+
+form #section-1-btn input {
+    cursor: pointer;
 }
 
 
@@ -162,13 +171,7 @@ form #section-1-btn-search {
 #section-2 article {
     padding-top: 10%;
     margin: 5%;
-}
-
-#section-2 article p {
-    font-size: 1.25rem;
-    line-height: 34px;
-    color: #8c8c8c;
-}
+} 
 
 #section-2-btn-all {
     display: flex;
@@ -362,8 +365,8 @@ form #section-1-btn-search {
     background-color: #f8f8f8;
 }
 
-#section-3 article:first-child {
-    margin: 5%;
+#section-3 article {
+    padding-bottom: 5%;
 }
 
 #section-3 article:first-child p {
@@ -456,22 +459,22 @@ form #section-1-btn-search {
 }
 
 /* Slideshow container */
-.slideshow-container {
+#section-5 .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
     border-radius: 30px;
 }
 
 /* Slides */
-.mySlides {
+#section-5 .mySlides {
     display: none;
     padding: 40px;
     text-align: center;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+#section-5 .prev,
+#section-5 .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -486,27 +489,27 @@ form #section-1-btn-search {
 }
 
 /* Position the "next button" to the right */
-.next {
+#section-5 .next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+#section-5 .prev:hover,
+#section-5 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
 /* The dot/bullet/indicator container */
-.dot-container {
+#section-5 .dot-container {
     text-align: center;
     padding: 20px;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+#section-5 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -518,19 +521,19 @@ form #section-1-btn-search {
 }
 
 /* Add a background color to the active dot/circle */
-.dot-container .active,
-.dot:hover {
+#section-5 .dot-container .active,
+#section-5 .dot:hover {
     background-color: #717171;
 }
 
 /* Add an italic font style to all quotes */
-q {
+#section-5 q {
     font-style: italic;
     font-size: 1.5rem;
 }
 
 /* Add a blue color to the author */
-.author {
+#section-5 .author {
     color: cornflowerblue;
 }
 
@@ -568,22 +571,6 @@ q {
 
 /* Login/Register */
 
-<<<<<<< HEAD
-#section-login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-form {
-    background: #fff;
-    width: 20vh;
-    transform: scale(2.2);
-    display: flex;
-    --webkit-box-orient: vertical;
-    --webkit-box-direction: normal;
-=======
 .login-form {
     background: #fff;
     width: 370px;
@@ -591,7 +578,6 @@ q {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
->>>>>>> origin/Antoni
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
@@ -688,25 +674,90 @@ q {
 }
 
 .login-form .action button:nth-child(2) {
-<<<<<<< HEAD
-    background: #5C98F2;
-=======
     background: #2d3b55;
->>>>>>> origin/Antoni
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
 }
 
 .login-form .action button:nth-child(2):hover {
-<<<<<<< HEAD
-    background: #5C78F3;
-=======
     background: #3c4d6d;
->>>>>>> origin/Antoni
 }
 
 
+/* Section - 7 */
+#section-7 {
+
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.contact-form-container h2 {
+    color: #5C98F2;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#contact-form {
+    padding: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+#contact-form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #5C98F2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
 
 /* Footer */
 
@@ -855,6 +906,45 @@ footer .nav-logo {
     color: #000000;
 }
 
+/*boutons see more */
+
+.form-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-more select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-more .bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5C98F2;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.form-more .bouton:hover {
+    background-color: #fff;
+    color: #5C98F2;
+    box-shadow: 0 0 5px #5C98F2;
+}
+
+.form-more label h1{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
 
 /*-----------  MEDIA QUERIES DESKTOP -----------*/
 
@@ -904,22 +994,43 @@ footer .nav-logo {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    #section-7 {
+        padding: 1rem;
+    }
+    
+    #section-2 .continent {
+        display: block;
+        margin: -6.5vh;
+        text-align: center;
+        color: #fff;
+        font-size: 1.4rem;
+        font-family: "DM Serif Display", sans-serif;
+    }
 
+    .description {
+        padding-top: 2.5rem;
+        text-align: left;
+        font-size: 1rem;
+    }
 
+    .form-more label h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        text-align: center;
 
-
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
 
-    /*----------- GENERAL -----------*/
-
 
     /*----------- SECTION-1 -----------*/
 
     #section-1 {
-        position: relative;
+        background: none;
     }
 
 
@@ -940,7 +1051,8 @@ footer .nav-logo {
         top: 5vh;
         right: 10vh;
         width: 30%;
-        height: 80%;
+        transform: scale(0.8);
+        height: 100%;
         border-radius: 2rem;
         z-index: 0;
     }
@@ -948,19 +1060,21 @@ footer .nav-logo {
     .section-1-form-container {
         flex-direction: row;
         width: 65vw;
-        height: 15vh;
+        height: 10vh;
         margin-top: 1rem;
+        align-items: center;
     }
 
 
     .section-1-form {
         position: relative;
         z-index: 1;
-        height: 15vh;
+        height: 10vh;
         flex-direction: row;
         width: 67vw;
         box-shadow: 0px 0px 5px #5C98F2;
         margin-top: 0;
+        margin-bottom: 0;
     }
 
 
@@ -968,17 +1082,20 @@ footer .nav-logo {
     #section-1-btn {
         border-radius: 0 2rem 2rem 0;
         width: 22.5vw;
+        height: 10vh;
     }
 
+    .underline {
+        border: none;
+    }
 
     /*----------- SECTION-2 -----------*/
-
-
-
 
     #section-2 h1 {
         font-size: 4rem;
         line-height: 4rem;
+        padding-right: 100%;
+        text-align: left;
     }
 
     #section-2 article {
@@ -986,8 +1103,10 @@ footer .nav-logo {
         text-align: center;
     }
 
-    #section-2 article p {
-        margin: 1rem;
+    .description {
+        padding-top: 2rem;
+        text-align: left;
+        font-size: 1.2rem;
     }
 
     #section-2-btn-all button {
@@ -1029,18 +1148,17 @@ footer .nav-logo {
         margin-top: 5vh;
     }
 
-
-
     /*----------------------- Tours desktop -----------------------*/
 
 
     #desk-tours {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-shrink: none;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap;     
+        margin: auto;
+        gap: 6vw;
     }
 
     #desk-tours>article:nth-child(1) {
@@ -1048,23 +1166,33 @@ footer .nav-logo {
     }
 
     .desk-cards figure {
-        width: 350px;
-        height: 60vh;
-        border-radius: 2rem;
+        width: 240px;
+        height: 40vh;
+        border-radius: 0.3rem;
 
     }
 
     #desk-section-3-figure-1 {
-        background: url(../img/tours/hon.jpg) center/cover;
+        background: url(../img/tours/hawaii3.jpg) center/cover;
     }
 
     #desk-section-3-figure-2 {
-        background: url(../img/tours/louvre.jpg) center/cover;
+        background: url(../img/tours/france3.jpg) center/cover;
     }
 
     #desk-section-3-figure-3 {
-        background: url(../img/tours/canada2.jpg) center/cover;
+        background: url(../img/tours/canada.jpg) center/cover;
     }
+
+    #desk-section-3-figure-4 {
+        background: url(../img/tours/okinawa2.jpg) center/cover;
+    }
+
+
+    #desk-section-3-figure-5 {
+        background: url(../img/tours/peru2.jpg) center/cover;
+    }
+
 
     /* Tours cards-desktop txt + anim */
 
@@ -1105,12 +1233,12 @@ footer .nav-logo {
         transition: all 1s;
         transform: translateY(100%);
         bottom: 100px;
-        height: 25%;
+        height: 35%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        border-radius: 0 0 2rem 2rem;
+
         background-color: #ffffff00;
     }
 
@@ -1129,7 +1257,7 @@ footer .nav-logo {
     .right button {
         border: none;
         background: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .right button a {
@@ -1139,18 +1267,10 @@ footer .nav-logo {
 
     .stars-tours-container {
         color: #5C98F2;
+        font-size: 0.5rem;
     }
 
-
-
-
-
-
-
-
     /*----------- SECTION-4 -----------*/
-
-
 
     #section-4 h1 {
         font-size: 4rem;
@@ -1196,10 +1316,7 @@ footer .nav-logo {
         width: 60vw;
     }
 
-
     /*----------- SECTION-6 -----------*/
-
-
 
     #section-6 {
         width: 100%;
@@ -1223,64 +1340,33 @@ footer .nav-logo {
         justify-content: space-around;
         align-items: center;
         row-gap: 0;
+        padding-bottom: 2vh;
     }
 
     #section-6 ul li {
         margin: 1%;
     }
 
+}
 
+@media only screen and (min-width: 768px) {
 
-    /*----------- FOOTER -----------*/
+    .payment,
+    .icone,
+    .contactf,
+    .copyright {
+        padding: 0;
+    }
 
-    #footer .footer-desk-container {
+    .copyright {
+        transform: translate(0, 30%);
+    }
+
+    footer {
         display: flex;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         justify-content: space-around;
     }
-
-    #footer .contactf {
-        padding: 0;
-    }
-
-    #footer .icone {
-        padding: 0;
-    }
-
-    #footer .payment {
-        padding: 0;
-    }
-
-    #footer p {
-        text-align: center;
-        padding-bottom: 20vh;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
