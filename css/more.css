@@ -40,7 +40,10 @@ body {
 .container {
     padding: 1rem;
     display: block;
+    display: block;
 }
+
+
 
 
 
@@ -49,6 +52,12 @@ body {
     max-width: 48rem;
     margin: 0 auto;
 }
+
+.mySlides {
+    padding: 0;
+}
+
+
 
 .mySlides {
     padding: 0;
@@ -109,6 +118,9 @@ p {
 }
 
 .booking-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -190,6 +202,8 @@ p {
     align-items: center;
     margin-top: 3vh;
     margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
     padding: 1rem;
     background-color: #5C98F2;
     color: white;
@@ -200,9 +214,12 @@ p {
 }
 
 
+
 .section-booking {
     margin: 5vh auto 5vh auto;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 80vw;
+    border-radius: 2rem;
     width: 80vw;
     border-radius: 2rem;
 }
@@ -211,7 +228,9 @@ p {
 .comments {
     font-family: 'Roboto', sans-serif;
 
+
 }
+
 
 .comment {
     margin: 20px;
@@ -223,7 +242,13 @@ p {
 
 .comment p {
     padding: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.comment p {
+    padding: 0;
+}
+
 
 .comment h2 {
     font-size: 20px;
@@ -231,10 +256,12 @@ p {
     margin-bottom: 10px;
 }
 
+
 .comment p {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 
 .comment .stars {
     color: #5C98F2;
@@ -330,3 +357,4 @@ p {
     
  
 }
+

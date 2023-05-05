@@ -1,0 +1,15 @@
+    @media only screen and (min-width: 768px) {
+
+        /*----------- GENERAL -----------*/
+
+        body::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/background-main.png');
+            background-repeat: no-repeat;
+            filter: opacity(0.08);
+        }
+    }
