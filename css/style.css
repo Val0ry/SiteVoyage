@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding: 2vh;
+    padding: 4vh;
 }
 
 .white {
@@ -59,15 +59,11 @@ form {
     display: none;
 }
 
-
-
-
 /*-------------------------- Header --------------------------*/
 
 
 
 /*-------------------------- Section-1 --------------------------*/
-
 
 #section-1 {
     background-color: #f8f8f8;
@@ -175,17 +171,7 @@ form #section-1-btn input {
 #section-2 article {
     padding-top: 10%;
     margin: 5%;
-}
-
-#section-2 article p {
-    display: block;
-    margin: 1.5vh;
-    text-align: center;
-    color: #ffff;
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-family: "DM Serif Display";
-}
+} 
 
 #section-2-btn-all {
     display: flex;
@@ -377,7 +363,6 @@ form #section-1-btn input {
 
 #section-3 {
     background-color: #f8f8f8;
-    padding: 5%;
 }
 
 #section-3 article {
@@ -701,39 +686,26 @@ form #section-1-btn input {
 
 
 /* Section - 7 */
-
-
-
-
-
-
-
-
-
-
-
-
 #section-7 {
-    
+
     background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
-    padding: 8rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .contact-form-container {
+}
+
+.contact-form-container {
     max-width: 600px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 1rem;
     overflow: hidden;
-  }
-  
-  .contact-form-container h2 {
+}
+
+.contact-form-container h2 {
     color: #5C98F2;
     font-size: 24px;
     font-weight: 500;
@@ -741,20 +713,20 @@ form #section-1-btn input {
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #ddd;
-  }
-  
-  #contact-form {
+}
+
+#contact-form {
     padding: 20px;
-  }
-  
-  #contact-form label {
+}
+
+#contact-form label {
     display: block;
     margin-bottom: 5px;
     color: #333;
-  }
-  
-  #contact-form input,
-  #contact-form textarea {
+}
+
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -762,14 +734,14 @@ form #section-1-btn input {
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-  }
-  
-  #contact-form textarea {
+}
+
+#contact-form textarea {
     resize: none;
     height: 150px;
-  }
-  
-  #contact-form button[type="submit"] {
+}
+
+#contact-form button[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
@@ -781,22 +753,11 @@ form #section-1-btn input {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  #contact-form button[type="submit"]:hover {
+}
+
+#contact-form button[type="submit"]:hover {
     transform: scale(1.1);
-  }
-  
-
-
-
-
-
-
-
-
-
-
+}
 
 /* Footer */
 
@@ -945,44 +906,22 @@ footer .nav-logo {
     color: #000000;
 }
 
-
-
-
-
-
-
-
 /*boutons see more */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .form-more {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .form-more select {
+}
+
+.form-more select {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .form-more .bouton {
+}
+
+.form-more .bouton {
     display: inline-block;
     padding: 10px 20px;
     background-color: #5C98F2;
@@ -991,43 +930,21 @@ footer .nav-logo {
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s;
-  }
-  
-  .form-more .bouton:hover {
+}
+
+.form-more .bouton:hover {
     background-color: #fff;
     color: #5C98F2;
     box-shadow: 0 0 5px #5C98F2;
-  }
-  
-  .form-more label {
-    font-size: 1.5rem;
-    padding: 3%;
-  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+.form-more label h1{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
 
 /*-----------  MEDIA QUERIES DESKTOP -----------*/
 
@@ -1047,7 +964,7 @@ footer .nav-logo {
         transition: 0.5s;
         z-index: 2;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -1077,35 +994,38 @@ footer .nav-logo {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-
-
+    #section-7 {
+        padding: 1rem;
+    }
     
+    #section-2 .continent {
+        display: block;
+        margin: -6.5vh;
+        text-align: center;
+        color: #fff;
+        font-size: 1.4rem;
+        font-family: "DM Serif Display", sans-serif;
+    }
 
+    .description {
+        padding-top: 2.5rem;
+        text-align: left;
+        font-size: 1rem;
+    }
 
+    .form-more label h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        text-align: center;
 
-
-
-
-
-
-
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
 
-    /*----------- GENERAL -----------*/
-
-    body::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/background-main.png');
-        background-repeat: no-repeat;
-        filter: opacity(0.1);
-    }
 
     /*----------- SECTION-1 -----------*/
 
@@ -1171,9 +1091,6 @@ footer .nav-logo {
 
     /*----------- SECTION-2 -----------*/
 
-
-
-
     #section-2 h1 {
         font-size: 4rem;
         line-height: 4rem;
@@ -1186,8 +1103,10 @@ footer .nav-logo {
         text-align: center;
     }
 
-    #section-2 article p {
-        margin: 1rem;
+    .description {
+        padding-top: 2rem;
+        text-align: left;
+        font-size: 1.2rem;
     }
 
     #section-2-btn-all button {
@@ -1229,21 +1148,17 @@ footer .nav-logo {
         margin-top: 5vh;
     }
 
-
-
     /*----------------------- Tours desktop -----------------------*/
 
 
     #desk-tours {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-shrink: none;  
+        justify-content: center;
+        align-items: center; 
         flex-wrap: wrap;     
-        width: 70vw;
         margin: auto;
-        gap: 1vw;
+        gap: 6vw;
     }
 
     #desk-tours>article:nth-child(1) {
@@ -1323,7 +1238,7 @@ footer .nav-logo {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        
+
         background-color: #ffffff00;
     }
 
@@ -1355,16 +1270,7 @@ footer .nav-logo {
         font-size: 0.5rem;
     }
 
-
-
-
-
-
-
-
     /*----------- SECTION-4 -----------*/
-
-
 
     #section-4 h1 {
         font-size: 4rem;
@@ -1410,10 +1316,7 @@ footer .nav-logo {
         width: 60vw;
     }
 
-
     /*----------- SECTION-6 -----------*/
-
-
 
     #section-6 {
         width: 100%;
@@ -1444,65 +1347,26 @@ footer .nav-logo {
         margin: 1%;
     }
 
-
-
-
-
-
-
-
-    /*----------- FOOTER -----------*/
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
 
 @media only screen and (min-width: 768px) {
 
-.payment,
-.icone,
-.contactf,
-.copyright {
-    padding: 0;
-}
+    .payment,
+    .icone,
+    .contactf,
+    .copyright {
+        padding: 0;
+    }
 
-.copyright {
-    transform: translate(0, 30%);
-}
+    .copyright {
+        transform: translate(0, 30%);
+    }
 
-footer {
-    display: flex;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    justify-content: space-around;
-}
+    footer {
+        display: flex;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        justify-content: space-around;
+    }
 
 }
